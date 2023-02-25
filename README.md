@@ -1,3 +1,17 @@
+<The Problem >
+Error (Xcode): ../../.pub-cache/hosted/pub.dev/modal_bottom_sheet-2.1.2/lib/src/bottom_sheets/bar_bottom_sheet.dart:102:13: Error: 'ModalBottomSheetRoute' is imported from both 'package:flutter/src/material/bottom_sheet.dart' and 'package:modal_bottom_sheet/src/bottom_sheet_route.dart'.
+
+<Solution 1 >
+    dependency_overrides:	
+        modal_bottom_sheet:		
+            git:			
+                url: https://github.com/danReynolds/modal_bottom_sheet.git			
+                path: modal_bottom_sheet
+
+<Solution 2 >
+dependency_overrides:
+  modal_bottom_sheet: ^3.0.0-pre
+
 <a href="https://jamesblasco.github.io/modal_bottom_sheet/#/"><img src="https://github.com/jamesblasco/modal_bottom_sheet/blob/screenshots/preview.png?raw=true"></a>
 
 # A modal bottom sheet for your Flutter app
